@@ -2,6 +2,10 @@
 
 /*----------------------------- General -----------------------------*/
 
+body{
+    zoom: 1.5;
+}
+
 *{
     font-family: "Roboto",sans-serif;
     font-weight: 700;
@@ -11,9 +15,7 @@ ul {
     font-weight: 400;   
     size:16px; 
 }
-nav{
-    color:white
-}
+
 /*----------------------------- Header -----------------------------*/
 header{
     background-color: #222222;
@@ -26,13 +28,27 @@ header{
     
     justify-content: space-between;
     align-items:  center;
+    
 }
 
-.containerHeader nav {
+.containerHeader div {
     padding: 20px;
+    display: flex;
+    flex-direction: row;
 }
+
+
 
 /*Logo pizza&font*/
+
+.logo{
+   
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+}
+
 span.pizza{
     color: green;
 }
@@ -44,25 +60,56 @@ span.front{
 }
 
 
+/*NAV*/
+
+
+.barNav{
+
+    justify-content: center;
+    align-items: center;
+    width: 315px;
+    color: white;
+    flex-direction: row;
+}
+
+.barNav ul {
+    list-style-type: none;
+    margin-left: 10px;
+    padding: 5px;
+  }
+  
+
+.barNav ul li{
+    float: left;
+    margin-left: 10px;
+}
+
+
+
 /*------------------------------ Main -----------------------------*/
 .padre{
     display: flex;
     background-color: #E3E3E3;
-    margin: 19px 35px;
     justify-content: space-between;
-
     
 }
 
 .containerPizzas{
     border-radius: 5px;
     display: flex;
+    justify-content: space-between;
 }
+
+.imagenDePodio{
+    margin:auto;
+}
+
 .item2 h2{
     text-align: center;
 }
 
 .item1{
+    margin: 19px 5px 19px 35px;
     background-image: url("../img/delivery.jpg");
     background-position: center;
     background-size: cover;
@@ -71,9 +118,19 @@ span.front{
     height: 350px;
     border: 2px;
     border-radius: 5px;
+    color: red;
+}
+
+.item1 h2{
+    margin-left: 5%;
+}
+
+.item1 span{
+    color: white;
 }
 
 .item2{
+    margin: 19px 35px 19px 5px;
     background-color: white;
     display: inline-block;
     width: 490px;   
