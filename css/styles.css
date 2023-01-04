@@ -3,12 +3,23 @@
 /*----------------------------- General -----------------------------*/
 
 body{
+
     zoom: 1.5;
+    -ms-zoom: 1.5;
+    -webkit-zoom: 1.5;
+    transform: 0;
+    transform-origin: 0;
+    -moz-transform: scale(1.5);
+    -moz-transform-origin: left center;
+    margin: 0;
+    top: 0;
+    left: 0;
 }
 
 *{
     font-family: "Roboto",sans-serif;
     font-weight: 700;
+   
 }
 ul {
     list-style-type: none; 
