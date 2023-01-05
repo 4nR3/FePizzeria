@@ -19,6 +19,8 @@ body{
 }
 ul {
     list-style-type: none; 
+    margin: 0;
+    padding: 0;
     font-weight: 400;   
     size:16px; 
     font-size: 25px;
@@ -176,19 +178,39 @@ main{
     height: 20%;
 }
 
+.containerFooter div{
+    height: 100%;
+    margin-left: 2.5%;
+}
+
+.containerFooter div ul{
+    height: 100%;
+    max-height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
 .containerFooter div ul li{
 
-    width: 44px;
-    height: 19px;
     font-family: Roboto;
     font-style: normal;
-    font-size: 16px;
+    font-size: 22px;
     font-weight: normal;
     line-height: 19px;
-
 }
 
 .pizzaTitulo{
     display: inline-flex;
     margin-right: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
+.pizzaTitulo img{
+    height: 75%;
 }
